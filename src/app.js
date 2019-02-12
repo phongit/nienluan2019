@@ -52,7 +52,7 @@ const Peer = require('peerjs');
 const uid = require('uid');
 const $ = require('jquery');
 
-const config = {host: 'nienluan2019.herokuapp.com', port: 443, secure:true, key: 'peerjs'}
+const config = {host: 'stream2009.herokuapp.com', port: 443, secure:true, key: 'peerjs'}
 function getPeer(){
     const id = uid(10);
     $('#peer-id').append(id);
