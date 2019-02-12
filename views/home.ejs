@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Chat</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="menu_home"><a class="active" href="#home">Home</a></li>
+        <li class="menu_home"><a href="#news">News</a></li>
+        <li class="menu_home"><a href="#contact">Contact</a></li>
+        <li class="menu_home"><a href="#about">About</a></li>
+    </ul>
+    <div class="list_chat">
+        <div class="list_chat_search">
+            <input type="text" />
+        </div>
+    </div>
+    <div class="content_chat">
+        <ul class="menu_chat">
+            <li class="username"><a id="peer-id" ></a></li>
+            <li class="call"><a id="myBtn" href="#1">Video</a></li>
+            <li class="call"><a href="#" id="call1">Call</a></li>
+        </ul>
+        <div class="content_chat_message">
+            <!-- <video id="LocalStream" width="300" controls></video> -->
+            <!-- <textarea rows="3" cols="100" id="txtMySignal"></textarea> -->
+            <br /><br />
+
+
+            <!-- <div class="message">
+                <div class="message_left">
+                    <span class="content_message">
+                        hello
+                    </span>
+                </div>
+            </div>
+            <div class="message">
+                <div class="message_right">
+                    <span class="content_message">
+                        hello
+                    </span>
+                </div>
+            </div> -->
+            <!-- <textarea rows="3" cols="100" id="txtMySignal"></textarea> -->
+            <input type="text" placeholder="Your friend's ID" id="txtFriendID">
+            <br /><br />
+            <button id="btnCall"> Call</button>
+
+        </div>
+        <div class="content_chat_footer">
+            <input type="text" />
+        </div>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Tên nè</h2>
+            </div>
+            <div class="modal-body">
+                <div class="FriendVideo">
+                    <video id="FriendStream" width="780px" height="570px" controls> </video>
+                </div>
+                <div class="LocalVideo" id="LocalVideo">
+                    <video id="LocalStream" width="250px" height="180px"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<!-- <script>
+    var socket = io.connect('http://192.168.1.18:2009');
+    var btn1 = document.getElementById("call1");
+    btn1.onclick = function () {
+        confirm("adsadsad")
+        socket.emit("user onl")
+    }
+</script> -->
+<script src="bundle.js"></script>
+
+</html>

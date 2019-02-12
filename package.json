@@ -1,0 +1,30 @@
+{
+  "name": "stream2009",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "init": "^0.1.2",
+    "jquery": "^3.3.1",
+    "uid": "0.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phongIT/stream2009.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phongIT/stream2009/issues"
+  },
+  "homepage": "https://github.com/phongIT/stream2009#readme"
+}
