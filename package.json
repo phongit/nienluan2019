@@ -8,6 +8,8 @@
     "express": "^4.16.4",
     "init": "^0.1.2",
     "jquery": "^3.3.1",
+    "peerjs": "^0.3.20",
+    "simple-peer": "^9.2.1",
     "uid": "0.0.2"
   },
   "devDependencies": {

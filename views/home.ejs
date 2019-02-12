@@ -26,7 +26,7 @@
     <div class="content_chat">
         <ul class="menu_chat">
             <li class="username"><a id="peer-id" ></a></li>
-            <li class="call"><a id="myBtn" href="#1">Video</a></li>
+            <li class="call"><a id="myBtn">Video</a></li>
             <li class="call"><a href="#" id="call1">Call</a></li>
         </ul>
         <div class="content_chat_message">
@@ -50,9 +50,9 @@
                 </div>
             </div> -->
             <!-- <textarea rows="3" cols="100" id="txtMySignal"></textarea> -->
-            <input type="text" placeholder="Your friend's ID" id="txtFriendID">
+            <!-- <input type="text" placeholder="Your friend's ID" id="txtFriendID">
             <br /><br />
-            <button id="btnCall"> Call</button>
+            <button id="btnConnect"> Call</button> -->
 
         </div>
         <div class="content_chat_footer">
@@ -71,16 +71,20 @@
             </div>
             <div class="modal-body">
                 <div class="FriendVideo">
-                    <video id="FriendStream" width="780px" height="570px" controls> </video>
+                    <video id="FriendStream" width="780px" height="500px" controls> </video>
                 </div>
                 <div class="LocalVideo" id="LocalVideo">
                     <video id="LocalStream" width="250px" height="180px"></video>
                 </div>
+                <textarea rows="3" cols="100" id="txtMySignal"></textarea>
+                <textarea rows="3" cols="100" placeholder="Your friend's ID" id="txtFriendSignal"></textarea>
+                <button id="btnConnect" width="80px" height="50px"> Connect</button>
+                <button id="btnCall" width="80px" height="50px"> Call</button>
             </div>
         </div>
     </div>
 </body>
-<script src="/socket.io/socket.io.js"></script>
+<!-- <script src="/socket.io/socket.io.js"></script> -->
 <!-- <script>
     var socket = io.connect('http://192.168.1.18:2009');
     var btn1 = document.getElementById("call1");
