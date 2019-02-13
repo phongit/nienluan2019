@@ -7,5 +7,4 @@ function openStream(cb) {
         })
         .catch(err => console.log(err));
 }
-
 module.exports = openStream;
